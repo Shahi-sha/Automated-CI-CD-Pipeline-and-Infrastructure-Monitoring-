@@ -1,23 +1,178 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>DevOps Monitoring Project</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DevOps CI/CD Project</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f172a, #1e1b4b, #312e81);
+    color: white;
+    min-height: 100vh;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+}
+
+.badge {
+    display: inline-block;
+    background: #064e3b;
+    color: #6ee7b7;
+    padding: 10px 20px;
+    border-radius: 50px;
+    margin-bottom: 25px;
+    border: 1px solid #10b981;
+}
+
+h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #38bdf8, #a78bfa, #f472b6);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.subtitle {
+    color: #cbd5e1;
+    font-size: 18px;
+    margin-bottom: 35px;
+}
+
+.status-card {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 18px;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.status {
+    color: #4ade80;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.card {
+    padding: 25px 20px;
+    border-radius: 18px;
+    transition: transform 0.3s;
+    color: white;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+}
+
+.card h2 {
+    margin: 12px 0;
+}
+
+.card p {
+    font-size: 14px;
+    color: #f1f5f9;
+}
+
+.aws { background: linear-gradient(135deg, #f59e0b, #ea580c); }
+.terraform { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
+.docker { background: linear-gradient(135deg, #0ea5e9, #0369a1); }
+.jenkins { background: linear-gradient(135deg, #ef4444, #b91c1c); }
+.prometheus { background: linear-gradient(135deg, #f97316, #c2410c); }
+.grafana { background: linear-gradient(135deg, #eab308, #ca8a04); }
+
+footer {
+    margin-top: 45px;
+    color: #94a3b8;
+    font-size: 14px;
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+}
+</style>
 </head>
+
 <body>
-    <h1>DevOps CI/CD Project</h1>
-    <h2>Deployment Successful!</h2>
 
-    <p>This application is deployed using:</p>
+<div class="container">
 
-    <ul>
-        <li>AWS EC2</li>
-        <li>Terraform</li>
-        <li>Docker</li>
-        <li>Jenkins CI/CD</li>
-        <li>Prometheus</li>
-        <li>Grafana</li>
-    </ul>
+    <div class="badge">● Deployment Successful</div>
 
-    <p>Status: Application is running successfully.</p>
+    <h1>DevOps CI/CD Pipeline</h1>
+
+    <p class="subtitle">
+        Automated Deployment & Infrastructure Monitoring
+    </p>
+
+    <div class="status-card">
+        <p class="status">✓ Application is Running Successfully</p>
+        <p style="margin-top:12px;color:#cbd5e1;">
+            Deployed automatically using Jenkins and Docker on AWS EC2
+        </p>
+    </div>
+
+    <h2>🚀 Technologies Used</h2>
+
+    <div class="cards">
+
+        <div class="card aws">
+            <h2>☁️ AWS</h2>
+            <p>Cloud Infrastructure & EC2</p>
+        </div>
+
+        <div class="card terraform">
+            <h2>🏗️ Terraform</h2>
+            <p>Infrastructure as Code</p>
+        </div>
+
+        <div class="card docker">
+            <h2>🐳 Docker</h2>
+            <p>Application Containerization</p>
+        </div>
+
+        <div class="card jenkins">
+            <h2>⚙️ Jenkins</h2>
+            <p>Automated CI/CD Pipeline</p>
+        </div>
+
+        <div class="card prometheus">
+            <h2>🔥 Prometheus</h2>
+            <p>Metrics Monitoring</p>
+        </div>
+
+        <div class="card grafana">
+            <h2>📊 Grafana</h2>
+            <p>Monitoring & Visualization</p>
+        </div>
+
+    </div>
+
+    <footer>
+        Built as a DevOps learning project | AWS + Jenkins + Docker + Terraform
+    </footer>
+
+</div>
+
 </body>
 </html>
